@@ -25,8 +25,8 @@
 
 {{#*inline "corruptionSelection"}}
 <div class="flexrow {{#if corruptionAbilities.thorough}}dnd5e-border{{/if}}" style="border-bottom: solid var(--syb5e-pc-color) 1px;align-items:center;">
-  <h4 class="attribute-name" style="text-align:right;margin:0">{{ localize "SYB5E.Corruption.Label"}}</h4>
-  <div style="text-align:left;">
+  <h4 class="attribute-name" style="text-align:left;margin:4px">{{ localize "SYB5E.Corruption.Label"}}</h4>
+  <div style="text-align:right;">
     <select name="{{corruptionAbilities.path}}" data-type="String">
       {{selectOptions corruptionAbilities.abilities selected=corruptionAbilities.current nameAttr="ability" labelAttr="label"}}
     </select>
